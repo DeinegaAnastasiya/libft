@@ -1,1 +1,67 @@
-test
+Библиотека различных функций, реализованных для использования в проектах
+в рамках обучения в Школе 21(Ecole 42)
+В данной библиотеке находятся следующие функции:
+1) ft_atoi (преобразовывает int в строку char);
+2) ft_strcmp (сравнивает символы двух строк);
+3) ft_strcpy (копирует строку в заданный буфер);
+4) ft_strdup (создает копию строки);
+5) ft_strlen (возвращает длину строки);
+6) ft_strncpy (копирует строку в заданный буфер с ограниченноым размером);
+7) ft_strstr (возвращает указатель на первое вхождение второй строки в первую);
+8) ft_strncmp (сравнивает символы двух строк до нахождения отличающихся символов или до заданной длины);
+9) ft_bzero (устанавливает в n-е количество байт '\0');
+10) ft_isalpha (проверяет, является ли параметр буквой алфавита);
+11) ft_isascii (проверяет, является ли параметр элементом таблицы ASCII);
+12) ft_isdigit (проверяет, является ли параметр числом);
+13) ft_isprint (проверяет, является ли параметр печатным символом);
+14) ft_isalnum (проверяет, является ли параметр буквой или цифрой);
+15) ft_memccpy (копирует строку до определенного символа или до заданной длины);
+16) ft_memchr (ищет вхождение в массив символа до заданной длины);
+17) ft_memcmp (сравнивает две строки до различающихся символов или до заданной длины);
+18) ft_memcpy (копирует содержимое одной области памяти в другую);
+19) ft_memmove (копирует определенное количество символов из одной строки в другую);
+20) ft_memset (заполняет массив заданным символом до заданной длины);
+21) ft_strcat (объединяет две строки);
+22) ft_strchr (ищет вхождение символа в строку);
+23) ft_strlcat ( char * dst, const  char * src, size_t size);
+24) ft_strncat ( char * s1, const  char * s2, size_t n);
+25) ft_strnstr ( const  char * стог сена,
+26) const  char * Needle, size_t len);
+char 				* ft_strrchr ( const  char * s, int c);
+int 					ft_tolower ( int c);
+int 					ft_toupper ( int c);
+void 				* ft_memalloc ( size_t size);
+void 				ft_memdel ( void ** ap);
+символ 				* ft_strnew ( size_t размера);
+void 				ft_strdel ( char ** as);
+void 				ft_strclr ( char * s);
+void 				ft_striter ( char * s, void (* f) ( char *));
+void 				ft_striteri ( char * s, void (* f) ( unsigned  int , char *));
+char 				* ft_strmap ( char  const * s, char (* f) ( char ));
+char 				* ft_strmapi ( char  const * s, char (* f) ( unsigned  int , char ));
+int 					ft_strequ ( char  const * s1, char  const * s2);
+int 					ft_strnequ ( char  const * s1, char  const * s2, size_t n);
+char 				* ft_strsub ( char  const * s, unsigned  int start, size_t len);
+char 				* ft_strjoin ( char  const * s1, char  const * s2);
+char 				* ft_strtrim ( char  const * s);
+char 				** ft_strsplit ( char  const * s, char c);
+char 				* ft_itoa ( int n);
+void 				ft_putchar ( char c);
+void 				ft_putstr ( char  const * s);
+void 				ft_putendl ( char  const * s);
+void 				ft_putnbr ( int n);
+void 				ft_putchar_fd ( char c, int fd);
+void 				ft_putstr_fd ( char  const * s, int fd);
+void 				ft_putendl_fd ( char  const * s, int fd);
+void 				ft_putnbr_fd ( int n, int fd);
+INT 					ft_countmem ( INT п);
+t_list * ft_lstnew ( void  const * content, size_t content_size);
+void 				ft_lstdelone (t_list ** alst, void (* del) ( void *, size_t ));
+void 				ft_lstdel (t_list ** alst, void (* del) ( void *, size_t ));
+void 				ft_lstadd (t_list ** alst, t_list * new);
+void 				ft_lstiter (t_list * lst, void (* f) (t_list * elem));
+t_list * ft_lstmap (t_list * lst, t_list * (* f) (t_list * elem));
+void 				ft_swap ( int * a, int * b);
+int 					ft_sqrt ( int nb);
+int 					* ft_range ( int min, int max);
+void 				* ft_freememmass ( char ** memmass);
